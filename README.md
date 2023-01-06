@@ -32,7 +32,7 @@ To enable the experiment tracking set `wandb` to `true` in the model training co
 
 ### Training a model
 1. Make sure to download the [dataset](http://toflow.csail.mit.edu/) first and place it in the `data` folder.
-2. Ensure all settings desired in the file `training_config.yaml` and `disney_model.yaml`
+2. Ensure all settings are as desired in the file `training_config.yaml` and `disney_model.yaml`
 3. Run
 ```
 python train_model.py
