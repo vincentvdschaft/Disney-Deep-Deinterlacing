@@ -1,0 +1,27 @@
+# The model class to initialize (Disney, ...) (Not case sensitive)
+model_class: Disney
+# A path to a state_dict to initialize the model parameters with (set to false to not load a state_dict)
+state_dict_path: false
+# The number of Residual Dense Blocks as described in the paper.
+# The original paper recommends 3.
+num_rdb_blocks: 3
+# The number of ResNet blocks to use.
+num_dense_blocks_per_rdb: 5
+# The size of the temporal window/the number of frames around the target frame
+# to incorporate. A value of 3 means: The current frame and the one before and
+# after it. The original paper recommends 3.
+num_frames: 3
+# Set to 1 when working with grayscale images. Set to three for color images.
+# This setting has to correspond to the setting in the dataset configuration.
+num_color_channels: 3
+# The activation function to use (relu, leaky_relu, sigmoid, swish)
+# (Not case sensitive)
+activation: leaky_relu
+# The number of filters at the input and output of a Residual Dense Block.
+rdb_num_filters: 64
+# The number of filters by which the output of a dense block is larger than the input.
+# e.g.: If set to 32 and the input has 64 channels, the output will have 96 channels.
+dense_block_num_filters_added: 32
+# The weights of the model are initialized to normally distributed values with
+# std equal to initializer_range.
+initializer_range: 0.0001

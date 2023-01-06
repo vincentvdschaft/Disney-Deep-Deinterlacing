@@ -1,0 +1,9 @@
+# Dataset class
+dataset_class: 'vimeo_triplet'
+# The root directory to search for image triplets for the train set
+dataset_root: data\vimeo_triplet
+# Shape [H, W] to resize images to (False to not resize)
+resize: false
+# Set to 1 when working with grayscale images. Set to three for color images.
+# This setting has to correspond to the setting in the dataset configuration.
+num_color_channels: 3

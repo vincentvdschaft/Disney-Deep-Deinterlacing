@@ -1,0 +1,7 @@
+matplotlib
+numpy
+tqdm
+pyyaml
+opencv-python
+wandb
+ipykernel

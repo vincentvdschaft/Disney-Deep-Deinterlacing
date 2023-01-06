@@ -1,0 +1,4 @@
+dataset_class: vimeo_triplet
+dataset_root: data\vimeo_triplet
+num_color_channels: 3
+resize: false

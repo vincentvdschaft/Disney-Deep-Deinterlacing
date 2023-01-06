@@ -1,0 +1,21 @@
+batch_size: 2
+checkpoint_interval: 10000
+dataset_config: config\vimeo90k_triplet_dataset.yaml
+evaluation_interval: 1000
+gradient_clip_norm: 5
+model_config: config\disney_model.yaml
+num_iterations: 100000
+optimizer: Adam
+optimizer_parameters:
+    lr: 0.0005
+scheduler: plateau
+scheduler_interval: 500
+scheduler_parameters:
+    factor: 0.1
+    patience: 10
+selected_image: 80
+show_interpolation_interval: 500
+test_limit_num_samples: false
+train_limit_num_samples: false
+wandb: true
+wandb_project_name: FrameBoostUS_color

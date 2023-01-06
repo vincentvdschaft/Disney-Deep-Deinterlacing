@@ -1,0 +1,6 @@
+venv
+.vscode
+wandb/
+**/__pycache__
+*.ipynb
+!evaluate_interpolation.ipynb

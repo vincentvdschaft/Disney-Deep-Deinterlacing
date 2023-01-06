@@ -1,0 +1,41 @@
+# The path to a config file to initialize the model
+model_config: config\disney_model.yaml
+# Dataset config
+dataset_config: config\vimeo90k_triplet_dataset.yaml
+# Set to true to track the experiment using weights and biases
+wandb: false
+# The project name to use when Weights and Biases experiment tracking is
+# enabled
+wandb_project_name: FrameBoostUS
+# Limits the number of samles in the train/test set (set to false to use all available samples)
+train_limit_num_samples: false
+test_limit_num_samples: false
+# The number of training iterations (this is how many batches/optimization steps
+# are performed)
+num_iterations: 200000
+# The batch size to train on
+batch_size: 2
+# The number of iterations to run before the model is evaluated against the test set again
+evaluation_interval: 1000
+# The number of iterations to run before a checkpoint is saved again
+checkpoint_interval: 5000
+# The number of iterations before a new sampling result is produced and stored
+show_interpolation_interval: 500
+# The image to show results for during training
+selected_image: 80
+# The optimizer to use (Adam, adadelta, adagrad, AdamW, sparseadam, adamax,
+# ASGD, LBFGS, RMSprop, SGD) (not case sensitive)
+optimizer: Adam
+# The optimizer parameters (different for different optimizers)
+optimizer_parameters:
+  # The initial learningrate to use
+  lr: 0.0005
+gradient_clip_norm: 5
+# The scheduler to use (lambda, multiplicative, step, constant, linear, plateau)
+# (set to false to not use a scheduler) (not case sensitive)
+scheduler: plateau
+# The scheduler parameters (different for different schedulers)
+scheduler_parameters:
+  patience: 10
+  factor: 0.1
+scheduler_interval: 500
