@@ -2,7 +2,7 @@
 This repository is an implementation of the paper [Deep Deinterlacing](https://studios.disneyresearch.com/2020/11/10/deep-deinterlacing/) by Disney research.
 
 ![examples](./assets/examples.png)
-*Results generated with the trained model *
+*Results generated with the pretrained model which was trained for 10000 iterations.*
 
 > **Warning**
 > I am not one of the authors of the paper. The code in this repository was independently produced. It might contain errors and likely does not perfectly reflect what the authors did.
