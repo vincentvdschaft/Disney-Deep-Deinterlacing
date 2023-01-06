@@ -1,4 +1,4 @@
-# FrameBoostUS
+# Deep Deinterlacing
 This repository is an implementation of the paper [Deep Deinterlacing](https://studios.disneyresearch.com/2020/11/10/deep-deinterlacing/) by Disney research.
 
 ![examples](./assets/examples.png)
