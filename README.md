@@ -42,3 +42,6 @@ To train on the GPU add the argument `--gpu 0` to train on GPU 0.
 ### Further information
 - [Model definitions and training](src/models/README.md)
 - [General utility functions](src/utils/README.md)
+
+### Model architecture
+![Model architecture](assets/DeepDeinterlacingModules.svg)
